@@ -2,14 +2,13 @@
 
 **Problem Statement #47 – Domain & SSL Certificate Expiry Alert System**
 
-This repository contains the deliverables for Software Engineering Labs 1–3 and Lab 5. The labs use the same problem statement and are organized separately for easy review.
+This repository contains the deliverables for Software Engineering Labs 1–3. All three labs use the same problem statement and are organized separately for easy review.
 
 ## Repository structure
 
 - [LAB1/](LAB1/) – Requirements engineering: requirements and actors, UML use-case diagram, and use-case flow.
-- [LAB2/](LAB2/) – Agile planning with Jira: epics, user stories, story points, backlog import CSV, sprint planning artefacts, and reflection.
+- [LAB2/](LAB2/) – Agile planning with Jira: epics, user stories, story points, backlog import CSV, sprint/burndown artefacts, and reflection.
 - [LAB3/](LAB3/) – Git workflow and software quality: Python source, unit/integration tests, pytest configuration, and commands for coverage, linting, formatting, and security scanning.
-- [LAB5-47/](LAB5-47/) – Static code analysis for the Domain & SSL Certificate Expiry Alert System: intentionally flawed baseline, corrected implementation, issues table, reflection, tests, and Pylint/Bandit/Flake8 commands.
 
 ## Lab 3 test commands
 
@@ -25,13 +24,8 @@ black src/ tests/ --check
 bandit -r src/
 ```
 
-## Lab 5-47 commands
-
-Run from the LAB5-47 folder and follow its README.md and commands.txt to generate baseline and final static-analysis reports.
-
 ## Notes
 
 - Lab 2's burndown graphic is an illustrative planning artefact, not a screenshot from a live Jira workspace. Capture actual Jira screenshots separately if required by the instructor.
-- Lab 3 local execution reported 14 tests passed, Pylint 10.00/10, and no Bandit issues. The final Black check should be verified locally.
-- Lab 5-47 tests passed in the creation environment. Pylint, Bandit and Flake8 reports must be generated on the student's machine; no tool results have been fabricated.
+- Lab 3 local execution reported 14 tests passed, Pylint 10.00/10, and no Bandit issues. Black formatting should be verified locally with `black src/ tests/ --check`.
 - Generated caches, virtual environments, and local machine-specific files are excluded.
